@@ -1,0 +1,214 @@
+
+<!-- Contact form data sheet =   https://docs.google.com/spreadsheets/d/1N6LPNC3a4cEq4QQ-HrrSQC3FHlvz3kUDu2kDjnrHe-8/edit#gid=0 -->
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+ <title> Portfolio </title>
+ <script src="https://kit.fontawesome.com/f2f5e930d6.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+ <div class="header" id="home">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" alt="image" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <!-- <li><a href="#">Project</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div class="home-text">
+        <h3>Programmer / Developer</h3>
+        <h1>Hi, It's <span>Prince Kumar</span><br>Bhopal</h1>
+    </div>
+</div>
+
+
+<!-- ==============About================ -->
+
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="images/mypic.jpg" style="width:100%; height:100%" alt="prince">
+            </div>
+            <div class="col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hii there, it's Prince Kumar .I am currently a final year student pursuing B.Tech at National Institute of Technology, MANIT,Bhopal,(M.P) in department of Computer Science Engineering. A tech enthusiast with a strong interest in web development and coding. I am highly interested in algorithmic problem solving and have a firm grasp in data structure and algorithms. Looking forward for opportunities to work in a challenging environment to diversify and utilize my knowledge in the growth of the organization and to improve my skills in real-life environment.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>  
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming language</span><br>C++, Javascript</li>
+                        <li><span>Database</span><br>MySQL, Mongo DB</li>
+                        <li><span>Development</span><br>Node.js, HTML, CSS,ReactJs,Express,Mongoose</li>
+                        <li><span>Development Ecosystem</span><br>GitHub, VS Code</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>C++</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JS</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-25 ( B.Tech )</span><br>National Institute of Technology, Bhopal<br><span class="b">CGPA-</span> 7.00</li>
+                        <li><span>2019  ( Class XII )</span><br>D.A.V. Public School, Amlori, M.P<br><span class="b">Percentage-</span> 92.6</li>
+                        <li><span>2018  ( Class X )</span><br>D.A.V. Public School, Amlori, M.P<br><span class="b">CGPA- </span>10</li>
+                    </ul>
+                </div>                                
+            </div>
+        </div>
+    </div> 
+ </div>
+
+
+ <!-- =======================services================ -->
+
+
+ <!-- =========================Portfolio=============== -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                 <img src="images/24.jpg"> <!-- //poster secton of canva -->
+                 <div class="layer">
+                    <h3>Blog App</h3>
+                    <p> Designed and developed a user-friendly website enabling users to post, update, and delete blogs while also providing access to
+                        others content. Implemented CRUD operations and authentication for user to enhance security and seamless user experience.</p>
+                        <a href="https://github.com/suyash-26/Blog-Site"><i class="fa-solid fa-square-up-right"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="images/23.jpg">
+                <div class="layer">
+                    <h3>Hotel_Reservation UI</h3>
+                    <p>"Revamp your hotel booking experience with our sleek and user-friendly web app UI."</p>
+                        <a href="https://github.com/suyash-26/React-Booking-App"><i class="fa-solid fa-square-up-right"></i></a>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="images/25.jpg">
+                <div class="layer">
+                    <h3>Text Utils</h3>
+                    <p>Develop an innovative web application that converts boring emails and PDF’s into engaging audio experience. It also offers
+                        features like text case conversion, space removal, base64 encoding and decoding , along with word and character count.
+                        </p>
+                    <a href="https://suyashtextutils.netlify.app/"><i class="fa-solid fa-square-up-right"></i></a>
+                 </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- ===============Contact=============== -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-at"></i>princesinghsisodiya30@gmail.com</p>
+                <p><i class="fa-solid fa-house-chimney"></i>Singrauli, (M.P.), 486887</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prince-kumar-a80185229/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank "><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://github.com/ranaprince007" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/suyash_resume_v7.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="9" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made with 🧡 in Bhopal @2024</p>
+    </div>
+</div>
+
+
+ <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+ 
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbylcwPr4sQ52nM583LcSA65J8kzNrCC06FmQTYwT6h5ywjINMAk-WgT14pnHbhwlZlA-g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <!-- =============== menu script============= -->
+
+  <script>
+
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemeu.style.right = "-200px";
+      }
+
+  </script>
+
+
+
+</body>
+</html>
